@@ -1,8 +1,10 @@
 .card {
-  display: flex;
+  display: grid;
   max-width: 60rem; 
+  width: 70%;
   margin: auto;
-  padding: 2rem;
+  margin-top: 1rem;
+  padding: 1rem;
   color: black;
   background: white;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
