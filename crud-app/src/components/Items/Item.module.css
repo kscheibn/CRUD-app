@@ -12,12 +12,32 @@
 
 .description {
   font-style: italic;
+  padding-bottom: 1rem;
 }
 
 .quantity {
-  /* justify-self: end; */
-  margin-top: 1rem;
+  display: inline;
   font-weight: bold;
   color: #ad5502;
   font-size: 1.25rem;
+}
+
+button {
+  float: right;
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+  width: fit-content;
+  background-color: #8a2b06;
+  border: 1px solid #8a2b06;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.button:hover,
+.button:active {
+  background-color: #641e03;
+  border-color: #641e03;
 }

@@ -4,7 +4,7 @@ import classes from "./LoginForm.module.css";
 
 function LoginForm() {
   const [searchParams] = useSearchParams();
-  const isLogin = searchParams.get("mode") === "login";
+  const isLogin = searchParams.get("mode") === "login" || searchParams.get("mode") === null;
 
   return (
     <>
@@ -19,7 +19,8 @@ function LoginForm() {
           <input id="password" type="password" name="password" required />
         </p>
         <div className={classes.actions}>
-          <p>New inventory manager?</p>
+          {isLogin && <p>New inventory manager?</p>}
+          {!isLogin && <p>Already have an account?</p>}
           <Link to={`?mode=${isLogin ? "signup" : "login"}`}>
             {isLogin ? "Create an account" : "login"}
           </Link>

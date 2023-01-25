@@ -8,9 +8,18 @@ const Item = (props) => {
     <li className={classes.item}>
       <Card>
         <h3>{props.name}</h3>
-        {!longDesc && <div className={classes.description}>{props.description}</div>}
-        {longDesc && <div className={classes.description}>{props.description.slice(0, 99) + "..."}</div>}
-        <div className={classes.quantity}>Quantity: {props.quantity}</div>
+        {!longDesc && (
+          <div className={classes.description}>{props.description}</div>
+        )}
+        {longDesc && (
+          <div className={classes.description}>
+            {props.description.slice(0, 99) + "..."}
+          </div>
+        )}
+        <div>
+          <div className={classes.quantity}>Quantity: {props.quantity}</div>
+          <button className={classes.button}>Details</button>
+        </div>
       </Card>
     </li>
   );
