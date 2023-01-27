@@ -1,6 +1,3 @@
-// import { useState, useEffect } from "react";
-// import Axios from "axios";
-
 import Item from "./Item";
 import classes from "./AvailableItems.module.css";
 
@@ -21,7 +18,7 @@ const DUMMY_ITEMS = [
     id: "i3",
     name: "Item 3",
     description:
-      "This is going to be a really long descripion. It needs to be at least 100 characters long--hopefully longer!",
+      "This is going to be a really long descripion. It needs to be at least 100 characters long. Hopefully, it'll be even longer!",
     quantity: 25,
   },
   {
@@ -33,13 +30,6 @@ const DUMMY_ITEMS = [
 ];
 
 const AvailableItems = () => {
-  // const [itemsList, setItemsList] = useState([]);
-
-  // useEffect(() => {
-  //   Axios.get("http://localhost:3002/api/get").then((data) => {
-  //     setItemsList(data.data);
-  //   });
-  // }, []);
 
   const itemsList = DUMMY_ITEMS.map((item) => (
     <Item

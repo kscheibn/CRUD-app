@@ -3,7 +3,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import RootLayout from "./pages/Root";
 import HomePage from "./pages/Home";
 import InventoryPage from "./pages/Inventory";
-import LoginPage, { action as loginAction } from "./pages/Login";
+import LoginPage, {action as loginAction} from "./pages/Login";
 import ErrorPage from "./pages/Error";
 
 const router = createBrowserRouter([
